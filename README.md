@@ -1,6 +1,7 @@
 # Simple Weather App
 
-This is a simple Angular application that allows users to view the weather forecast for a selected city. The app uses the OpenWeatherMap API to fetch weather data for a specified city.
+This is a simple Angular application that allows users to view the weather forecast for a selected city. The app uses the OpenWeatherMap API to fetch weather data for a specified city.<br>
+A [Live demo](https://j-mori.github.io/ng-openweather/) is available
 
 ## Getting Started
 
