@@ -1,0 +1,26 @@
+.container {
+  padding: 10px 4px;
+  min-width: 80px;
+}
+
+div {
+  text-align: center;
+}
+
+.icon img {
+  max-width: 100%;
+}
+
+.temp {
+  font-weight: bold;
+  color: #363636;
+}
+
+.humidity {
+  color: #5eb5d7;
+}
+
+.hour {
+  color: #878787;
+  white-space: nowrap;
+}

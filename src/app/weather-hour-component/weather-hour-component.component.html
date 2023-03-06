@@ -1,0 +1,14 @@
+<div *ngIf="forecast" class="container">
+  <div class="temp">
+    {{forecast.main.temp | number:'1.0-0'}}&deg;
+  </div>
+  <div class="humidity">
+    {{forecast.main.humidity}}%
+  </div>
+  <div class="icon">
+    <img src="{{imageSrc}}" alt="{{forecast.weather[0].description}}">
+  </div>
+  <div class="hour">
+    {{forecast.dt_txt | date:'h:mm a'}}
+  </div>
+</div>

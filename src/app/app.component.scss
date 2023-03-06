@@ -1,0 +1,117 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+/* Style for header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #3063BA;
+  color: #fff;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+
+}
+
+.header-container h1 {
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  outline: none;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.search-container button[type="submit"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+/* Style for tab selector */
+.tab-selector {
+  background-color: #fafafa;
+}
+
+.tab-selector ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tab-selector li {
+  padding: 18px 20px;
+  cursor: pointer;
+  color: #888888;
+  text-transform: uppercase;
+  max-width: 33%;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.tab-selector li:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.tab-selector li.active {
+  color: #000;
+  border-bottom: 2px solid #cb5b41;
+}
+
+/* Style for weather container */
+.weather-container {
+  display: block;
+  background-color: #3063BA;
+  padding: 8px 22px;
+}
+
+.weather-box {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.weather-box h2 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+/* Style for hourly forecast */
+.hourly-forecast {
+  display: flex;
+  overflow: scroll;
+}
+
+.hourly-forecast div {
+  flex: 1 0 20%;
+  margin: 0;
+}
+
+/* Style for daily forecast */
+.daily-forecast {
+  margin-top: 26px;
+}
+
+
+/* Style for footer */
+footer {
+  text-align: right;
+  margin: 0;
+  color: #ffffff;
+  background-color: #2659ba;
+}

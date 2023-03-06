@@ -1,0 +1,45 @@
+<header>
+  <div class="header-container">
+    <h1>Simple Weather</h1>
+    <div class="search-container">
+      <form (ngSubmit)="searchCity(citySearch)">
+        <input [(ngModel)]="citySearch" name="city" placeholder="Search a city" type="text">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<div class="tab-selector">
+  <ul>
+    <li (click)="selectCityTab(i)" *ngFor="let city of citiesTabs; index as i"
+        [class.active]="i === selectedCityTab">{{ city }}</li>
+  </ul>
+</div>
+
+<div class="weather-container">
+  <div class="weather-box">
+    <h2>Next Hours</h2>
+    <div *ngIf="hourlyForecast" class="hourly-forecast">
+      <div *ngFor="let forecast of hourlyForecast">
+        <weather-hour-component [forecast]="forecast"></weather-hour-component>
+      </div>
+    </div>
+    <div *ngIf="!hourlyForecast">No data available</div>
+  </div>
+
+
+  <div class="weather-box">
+    <h2>Next {{FORECAST_DAYS_TRESHOLD}} Days </h2>
+    <div *ngIf="dailyForecast" class="daily-forecast">
+      <div *ngFor="let forecast of dailyForecast">
+        <weather-day-component [forecast]="forecast"></weather-day-component>
+      </div>
+    </div>
+    <div *ngIf="!dailyForecast">No data available</div>
+  </div>
+</div>
+
+<footer *ngIf="lastUpdate">
+  <p>Last updated on {{ lastUpdate | date:'LLL, d hh:mm' }}</p>
+</footer>

@@ -1,0 +1,15 @@
+<div *ngIf="forecast" class="container">
+  <div class="icon">
+    <img src="{{imageSrc}}" alt="{{forecast.weather[0].description}}">
+  </div>
+  <div class="day">
+    <span class="datetime">{{forecast.dt_txt | date:'E, LLL, d'}}</span><br>
+    <span class="description">{{forecast.weather[0].description}}</span>
+  </div>
+  <div class="temp max-temp">
+    {{forecast.main.temp_max | number:'1.0-0'}}&deg;
+  </div>
+  <div class="temp min-temp">
+    {{forecast.main.temp_min | number:'1.0-0'}}&deg;
+  </div>
+</div>

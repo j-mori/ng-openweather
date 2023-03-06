@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+}
+
+.container > div {
+  flex: 1 1 auto
+}
+
+div {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.temp {
+  font-weight: bold;
+  color: #363636;
+}
+
+.icon {
+  max-width: 85px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.day {
+  padding: 0 18px;
+
+  > span {
+    white-space: nowrap;
+  }
+
+  .datetime {
+    font-size: 24px;
+    color: #030303;
+  }
+
+  .description {
+    color: #858585;
+    font-size: 14px;
+  }
+}
